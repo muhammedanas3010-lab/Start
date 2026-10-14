@@ -1091,7 +1091,7 @@
             document.getElementById('bebi-comp').innerText = bebiCust.filter(c => c.status === 'Completed').length;
             document.getElementById('bebi-pend').innerText = bebiCust.filter(c => c.status === 'Pending').length;
 
-const completedOrders = customers.filter(c => c.status === 'Completed').sort((a, b) => new Date(b.completedAt || b.deliveryDate) - new Date(a.completedAt || a.deliveryDate));
+            const completedOrders = customers.filter(c => c.status === 'Completed').sort((a, b) => new Date(b.completedAt || b.deliveryDate) - new Date(a.completedAt || a.deliveryDate));
             const pendingOrders = customers.filter(c => c.status === 'Pending').sort((a,b) => new Date(a.deliveryDate) - new Date(b.deliveryDate));
 
             document.getElementById('total-orders-count').innerText = customers.length;
