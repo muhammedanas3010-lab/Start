@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1041,7 +1040,8 @@
         }
 
         // Refresh UI & Calculations
-        function refreshUI() {
+        function // refreshUI() ഉള്ളിലെ ഈ ലൈൻ ഒഴിവാക്കുക:
+// document.getElementById('dash-owner-orders-count').innerText = ...
             const customers = appData.customers;
             const totalRev = customers.reduce((sum, c) => sum + c.price, 0);
             const grossProf = customers.reduce((sum, c) => sum + c.bizProfit, 0);
